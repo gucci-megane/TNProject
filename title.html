@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>TNProj</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script language="JavaScript">
+    mnt = 3.5; // 何秒後に移動するか？
+    url = "file:///Users/guc2i/TNProject/mapSample.html"; // 移動するアドレス
+    function jumpPage() {
+      location.href = url;
+    }
+    setTimeout("jumpPage()",mnt*1000)
+  </script>
+</head>
+<body>
+  <svg viewBox="0 0 800 600">
+  <symbol id="s-text">
+    <text text-anchor="middle"
+          x="50%"
+          y="35%"
+          class="text--line"
+          >
+      Welcome to
+    </text>
+    <text text-anchor="middle"
+          x="50%"
+          y="68%"
+          class="text--line2"
+          >
+      TNProj
+    </text>
+  </symbol>
+  <g class="g-ants">
+    <use xlink:href="#s-text"
+      class="text-copy"></use>
+    <use xlink:href="#s-text"
+      class="text-copy"></use>
+    <use xlink:href="#s-text"
+      class="text-copy"></use>
+    <use xlink:href="#s-text"
+      class="text-copy"></use>
+    <use xlink:href="#s-text"
+      class="text-copy"></use>
+  </g>
+</svg>
+</body>
+</html>
